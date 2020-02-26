@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  # docker image name
+  frontend:
+    container_name: react
+    build:
+      #directory where Dockerfile resides
+      context: ./frontend
+      # Name of dockerfile
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=development
