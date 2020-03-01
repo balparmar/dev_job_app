@@ -1,11 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
 import RangeSlider from './components/RangeSlider';
 
 function App() {
   return (
-    <div className='App'>
+    <div className='bg-red-500 w-screen h-screen'>
       <RangeSlider />
     </div>
   );
